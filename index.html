@@ -131,7 +131,6 @@
                 })
                 .then(response => {
                     if (response.status === 204) {
-                        alert('Сообщение успешно отправлено.');
                         saveWebhook(webhookUrl);
                         webhookUrlInput.value = '';
                     } else {
